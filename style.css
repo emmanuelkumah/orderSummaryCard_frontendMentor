@@ -63,6 +63,7 @@ body {
     color: var(--darkBlue);
   }
   .orderPlans span {
+    font-size: 0.95rem;
     font-weight: 100;
     color: var(--desaturatedBlue);
   }
