@@ -10,6 +10,7 @@
   --veryPaleBlue: hsl(225, 100%, 98%);
   --desaturatedBlue: hsl(224, 23%, 55%);
   --darkBlue: hsl(223, 47%, 23%);
+  --white: #fff;
 }
 body {
   background: url("./images/pattern-background-desktop.svg") var(--paleBlue)
@@ -26,7 +27,7 @@ body {
   .orderContainer {
     width: 34vw;
     height: auto;
-    background-color: var(--veryPaleBlue);
+    background-color: var(--white);
     margin: 120px auto;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
@@ -49,15 +50,15 @@ body {
     color: var(--desaturatedBlue);
     font-size: 1.05rem;
     line-height: 1.5;
+    /* padding-bottom: 20px; */
   }
   .orderPlans {
     display: flex;
     justify-content: space-around;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 20px 15px 20px;
+    margin: 20px 50px 20px;
+    padding: 30px 15px 20px;
     border-radius: 10px;
-    background-color: var(--paleBlue);
+    background-color: var(--veryPaleBlue);
   }
   .orderPlans h2 {
     font-size: 1rem;
@@ -79,11 +80,14 @@ body {
     color: var(--brightBlue);
     padding-right: 20px;
   }
+  .orderPlans a:hover {
+    cursor: pointer;
+  }
   button {
     display: block;
     margin: 0 auto;
     width: 80%;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 15px;
     background-color: var(--brightBlue);
     border: none;
@@ -94,11 +98,17 @@ body {
   button h3 {
     color: var(--veryPaleBlue);
   }
+  button:hover {
+    cursor: pointer;
+  }
   .orderCancel {
     padding: 30px 0px 30px;
     text-align: center;
     color: var(--desaturatedBlue);
     font-weight: 900;
+  }
+  .orderCancel:hover {
+    cursor: pointer;
   }
 }
 
@@ -107,7 +117,7 @@ body {
   .orderContainer {
     width: 90vw;
     height: auto;
-    background-color: var(--veryPaleBlue);
+    background-color: var(--white);
     margin: 60px 0px 60px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
@@ -131,7 +141,10 @@ body {
   .orderPlans {
     display: flex;
     justify-content: space-around;
-    padding: 50px 15px 20px;
+    padding: 20px 15px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: var(--veryPaleBlue);
   }
   .orderPlans h2 {
     font-size: 1rem;
