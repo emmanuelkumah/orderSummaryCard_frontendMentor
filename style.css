@@ -12,16 +12,94 @@
   --darkBlue: hsl(223, 47%, 23%);
 }
 body {
-  /* background-color: var(--paleBlue); */
-  background: url("./images/pattern-background-mobile.svg") var(--paleBlue)
+  background: url("./images/pattern-background-desktop.svg") var(--paleBlue)
     no-repeat;
-
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .orderContainer {
+    width: 34vw;
+    height: auto;
+    background-color: var(--veryPaleBlue);
+    margin: 120px auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+  .heroImg {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  article h1 {
+    color: var(--darkBlue);
+    text-align: center;
+    padding: 40px 0 15px;
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+  article p {
+    text-align: center;
+    color: var(--desaturatedBlue);
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+  .orderPlans {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px 15px 20px;
+    border-radius: 10px;
+    background-color: var(--paleBlue);
+  }
+  .orderPlans h2 {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  .orderPlans h2 {
+    color: var(--darkBlue);
+  }
+  .orderPlans span {
+    font-size: 0.95rem;
+    font-weight: 100;
+    color: var(--desaturatedBlue);
+  }
+  .orderPlans a {
+    position: relative;
+    top: 15px;
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: var(--brightBlue);
+    padding-right: 20px;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--brightBlue);
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+  button h3 {
+    color: var(--veryPaleBlue);
+  }
+  .orderCancel {
+    padding: 30px 0px 30px;
+    text-align: center;
+    color: var(--desaturatedBlue);
+    font-weight: 900;
+  }
 }
 
 /* Mobile view */
